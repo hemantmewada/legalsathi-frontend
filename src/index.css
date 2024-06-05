@@ -1,0 +1,10 @@
+.dropdown{
+    width: max-content;
+    right: 0;
+}
+@media only screen and (max-width: 768px) {
+    .header-row > .col,
+    .header-row > .col-9{
+        max-width: 50%;
+    }
+}
