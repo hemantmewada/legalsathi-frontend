@@ -1,0 +1,101 @@
+import React, { useEffect } from "react";
+import { useFormik } from "formik";
+import { enquiryFormValidationShema } from "../schema/enquiryFormValidationShema";
+import { enquiryAPI } from "../service/api";
+
+
+const initialValues = {
+    name: "",
+    email: "",
+    contact: "",
+    relatedTo: "",
+    enquiryFor: ""
+};
+
+const Form = ({ pageName }) => {
+
+  const {
+    errors,
+    values,
+    touched,
+    handleBlur,
+    handleReset,
+    handleChange,
+    handleSubmit,
+    setValues,
+  } = useFormik({
+    initialValues,
+    validationSchema: enquiryFormValidationShema,
+    onSubmit: (values) => {
+    //   console.log(values);
+      enquiryAPI(values);
+    },
+  });
+  useEffect(() => {
+    setValues({ ...values, enquiryFor: pageName });
+  }, [pageName])
+  
+  return (
+    <form className="book-form" onSubmit={handleSubmit}>
+      <h3><span className="form-heading">{pageName}</span> Enquiry</h3>
+      <div className="row align-items-center">
+        <div className="mb-3 mb-md-4 col-md-12">
+          <input
+            value={values.name}
+            onChange={handleChange}
+            onBlur={handleBlur}
+            name="name"
+            type="text"
+            className="form-control"
+            placeholder="Name"
+          />
+          {touched.name && errors.name && <p className="text-red">{errors.name}</p>}
+        </div>
+        <div className="mb-3 mb-md-4 col-md-12">
+          <input
+            value={values.email}
+            onChange={handleChange}
+            onBlur={handleBlur}
+            name="email"
+            type="email"
+            className="form-control"
+            placeholder="Email"
+          />
+          {touched.email && errors.email && <p className="text-red">{errors.email}</p>}
+        </div>
+        <div className="mb-3 mb-md-4 col-md-12">
+          <input
+            value={values.contact}
+            onChange={handleChange}
+            onBlur={handleBlur}
+            name="contact"
+            type="number"
+            className="form-control"
+            placeholder="Contact No"
+          />
+          {touched.contact && errors.contact && <p className="text-red">{errors.contact}</p>}
+        </div>
+        <div className="mb-3 mb-md-4 col-md-12">
+          <select onChange={handleChange} onBlur={handleBlur} name="relatedTo" className="form-control">
+            <option value="">Related To</option>
+            <option value="Lawyer">Lawyer</option>
+            <option value="Chartered Accountant">Chartered Accountant</option>
+            <option value="Company Secretary">Company Secretary</option>
+            <option value="Not sure">Not sure</option>
+          </select>
+          {touched.relatedTo && errors.relatedTo && <p className="text-red">{errors.relatedTo}</p>}
+        </div>
+        <input type="hidden" name="enquiryFor" value={values.enquiryFor} />
+        <div className="col-md-12">
+          <input
+            type="submit"
+            value="GET A QUOTE"
+            className="btn btn-primary btn-block py-3"
+          />
+        </div>
+      </div>
+    </form>
+  );
+};
+
+export default Form;

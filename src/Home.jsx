@@ -1,5 +1,6 @@
 import React from 'react';
 import Typed from 'typed.js';
+import Form from './components/Form';
 
 function Home() {
   const el = React.useRef(null);
@@ -35,26 +36,7 @@ function Home() {
                   <p className="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis cupiditate deserunt placeat necessitatibus a aliquam corrupti nisi odio aliquid, accusamus.</p>
                 </div>
                 <div className="col-lg-5">
-                  <form className="book-form">
-                    <h3>Book an Appointment</h3>
-                    <div className="row align-items-center">
-                      <div className="mb-3 mb-md-4 col-md-12">
-                        <input type="text" className="form-control" placeholder="Name" />
-                      </div>
-                      <div className="mb-3 mb-md-4 col-md-12">
-                        <input type="email" className="form-control" placeholder="Email" />
-                      </div>
-                      <div className="mb-3 mb-md-4 col-md-12">
-                        <div className="form-control-wrap">
-                          <input type="text" id="cf-4" placeholder="Select Date" className="form-control datepicker px-3" />
-                          <span className="icon icon-date_range" />
-                        </div>
-                      </div>
-                      <div className="col-md-12">
-                        <input type="submit" defaultValue="Book Appointment" className="btn btn-primary btn-block py-3" />
-                      </div>
-                    </div>
-                  </form>
+                  <Form pageName={"GENERAL"} />
                 </div>
               </div>
             </div>
@@ -156,7 +138,7 @@ function Home() {
               <h3 className="mb-4 section-heading">We Provide Highly <strong>Reliable &amp; Effective</strong> Legal Solutions </h3>
               <p className="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae, explicabo iste a labore id est quas, doloremque veritatis! Provident odit pariatur dolorem quisquam, voluptatibus voluptates optio accusamus, vel quasi quidem!</p>
               <p>
-                <a href="#" className="btn btn-primary">Book an appointment</a>
+                <a href="#home-section" className="btn btn-primary">Book an appointment</a>
               </p>
             </div>
           </div>
