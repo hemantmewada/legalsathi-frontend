@@ -14,7 +14,9 @@ const enquieryAPI = () => {
             const {data} = await axios.post(`${config.VITE_API_URL}/enquiry`,values);
             setLoading(false);
             toast.success(data.message);
-            window.location.reload()
+            setTimeout(() => {
+                window.location.reload()
+            }, 500);
         } catch (error) {
             setLoading(false);
             console.log(error);

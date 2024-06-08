@@ -35,7 +35,7 @@ ul.dropdown.mega-menu{
 ul.dropdown.mega-menu > .row{
     /* background-color: red; */
     gap: 20px;
-    font-family: "poppins";
+    /* font-family: "poppins"; */
 }
 ul.dropdown.mega-menu li{
     padding-bottom: 5px;
@@ -57,7 +57,7 @@ nav li{
     /* color: #fff; */
 }
 .form-title{
-    font-family: "poppins";
+    /* font-family: "poppins"; */
 }
 .border-radius-10{
     border-radius: 10px;
@@ -87,7 +87,7 @@ nav li{
     width: 20%;
 }
 .achievements p{
-    font-family: "poppins";
+    /* font-family: "poppins"; */
 }
 .font-size-30{
     font-size: 30px;
