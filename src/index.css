@@ -9,6 +9,7 @@
     width: max-content;
     right: 0;
 }
+/* for mobile */
 @media only screen and (max-width: 768px) {
     .header-row > .col,
     .header-row > .col-9{
@@ -16,6 +17,15 @@
     }
     .nav-link.text-white{
         color: #000 !important;
+    }
+    .service-page{
+        padding: 8em 0 10em 0;
+    }
+    .document-required-section{
+        padding-top: 20em !important;
+    }
+    .achievements{
+        width: 100% !important;
     }
 }
 ul.dropdown.mega-menu{
@@ -42,6 +52,43 @@ nav li{
     font-size: 14px;
 }
 .form-heading{
-    background-color: #000;
-    color: #fff;
+    border-bottom: 1px solid #000;
+    font-weight: bold;
+    /* color: #fff; */
+}
+.form-title{
+    font-family: "poppins";
+}
+.border-radius-10{
+    border-radius: 10px;
+}
+.font-weight-bold{
+    font-weight: bold;
+}
+.font-weight-normal{
+    font-weight: normal;
+}
+.margin-bottom-0{
+    margin-bottom: 0;
+}
+.service-page .testimonial-2{
+    padding: 10px;
+}
+.service-page{
+    padding: 8em 0 2em 0;
+}
+.p-15{
+    padding: 15px;
+}
+.p-10{
+    padding: 10px;
+}
+.achievements{
+    width: 20%;
+}
+.achievements p{
+    font-family: "poppins";
+}
+.font-size-30{
+    font-size: 30px;
 }

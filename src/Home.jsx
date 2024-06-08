@@ -36,7 +36,7 @@ function Home() {
                   <p className="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis cupiditate deserunt placeat necessitatibus a aliquam corrupti nisi odio aliquid, accusamus.</p>
                 </div>
                 <div className="col-lg-5">
-                  <Form pageName={"GENERAL"} />
+                  <Form pageName={"General"} />
                 </div>
               </div>
             </div>

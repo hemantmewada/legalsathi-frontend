@@ -3,7 +3,7 @@ import {BrowserRouter, Route, Routes} from "react-router-dom";
 import Home from './Home';
 import Skeleton from './components/Skeleton';
 import Service from './components/Service';
-import { ToastContainer } from 'react-toast'
+import toast, { Toaster } from 'react-hot-toast';
 
 const App = () => {
   return (
@@ -14,7 +14,7 @@ const App = () => {
               <Route path="/:service" element={<Service />} />
           </Route>
         </Routes>
-        <ToastContainer />
+        <Toaster />
   </BrowserRouter>
   )
 }

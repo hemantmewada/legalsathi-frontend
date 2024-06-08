@@ -1,7 +1,8 @@
 import React, { useEffect } from "react";
 import { useFormik } from "formik";
 import { enquiryFormValidationShema } from "../schema/enquiryFormValidationShema";
-import { enquiryAPI } from "../service/api";
+import enquiryAPI from "../service/enquieryAPI";
+import Loader from "./Loader";
 
 
 const initialValues = {
@@ -13,7 +14,7 @@ const initialValues = {
 };
 
 const Form = ({ pageName }) => {
-
+  const {loading, api} = enquiryAPI();
   const {
     errors,
     values,
@@ -26,9 +27,9 @@ const Form = ({ pageName }) => {
   } = useFormik({
     initialValues,
     validationSchema: enquiryFormValidationShema,
-    onSubmit: (values) => {
-    //   console.log(values);
-      enquiryAPI(values);
+    onSubmit: (values, actions) => {
+      // console.log(values);
+      api(values, actions);
     },
   });
   useEffect(() => {
@@ -37,7 +38,7 @@ const Form = ({ pageName }) => {
   
   return (
     <form className="book-form" onSubmit={handleSubmit}>
-      <h3><span className="form-heading">{pageName}</span> Enquiry</h3>
+      <h3 className="form-title"><span className="form-heading">{pageName}</span> Enquiry</h3>
       <div className="row align-items-center">
         <div className="mb-3 mb-md-1 col-md-12">
           <input
@@ -87,11 +88,17 @@ const Form = ({ pageName }) => {
         </div>
         <input type="hidden" name="enquiryFor" value={values.enquiryFor} />
         <div className="col-md-12">
-          <input
-            type="submit"
-            value="GET A QUOTE"
-            className="btn btn-primary btn-block py-3 text-white"
-          />
+          {
+            loading ? (
+              <Loader />
+            ) : (
+              <input
+                type="submit"
+                value="GET A QUOTE"
+                className="btn btn-primary btn-block py-3 text-white"
+              />
+            )
+          }
         </div>
       </div>
     </form>
