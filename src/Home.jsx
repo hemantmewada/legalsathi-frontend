@@ -138,7 +138,7 @@ function Home() {
               <h3 className="mb-4 section-heading">We Provide Highly <strong>Reliable &amp; Effective</strong> Legal Solutions </h3>
               <p className="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae, explicabo iste a labore id est quas, doloremque veritatis! Provident odit pariatur dolorem quisquam, voluptatibus voluptates optio accusamus, vel quasi quidem!</p>
               <p>
-                <a href="#home-section" className="btn btn-primary">Book an appointment</a>
+                <a href="#home-section" className="btn btn-primary text-white">Book an appointment</a>
               </p>
             </div>
           </div>

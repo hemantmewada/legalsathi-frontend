@@ -581,8 +581,10 @@ fieldset:disabled a.btn {
   border-color: var(--primary); }
   .btn-primary:hover {
     color: #212529;
-    background-color: #fed48d;
-    border-color: #fdcf81; }
+    /* background-color: #fed48d;
+    border-color: #fdcf81; */
+    background-color: #1873c9;
+    border-color: #1873c9; }
   .btn-primary:focus, .btn-primary.focus {
     -webkit-box-shadow: 0 0 0 0.2rem rgba(221, 198, 158, 0.5);
     box-shadow: 0 0 0 0.2rem rgba(221, 198, 158, 0.5); }

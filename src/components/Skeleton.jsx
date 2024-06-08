@@ -1,10 +1,10 @@
 import React from "react";
 import { Outlet, Link } from "react-router-dom";
 
-const Header = () => {
+const Skeleton = () => {
   return (
     <div className="site-wrap" id="home-section">
-      <div className="site-mobile-menu site-navbar-target">
+      <div className="site-mobile-menu site-navbar-target bg-primary">
         <div className="site-mobile-menu-header">
           <div className="site-mobile-menu-close mt-3">
             <span className="icon-close2 js-menu-toggle" />
@@ -26,7 +26,7 @@ const Header = () => {
             <div className="col-9 text-right text-lg-left">
               <span className="d-inline-block d-lg-none">
                 <a href="#" className="site-menu-toggle js-menu-toggle py-5 ">
-                  <span className="icon-menu h3 text-black" />
+                  <span className="icon-menu h3 text-white" />
                 </a>
               </span>
               <nav
@@ -36,7 +36,7 @@ const Header = () => {
 
                 <ul className="site-menu main-menu js-clone-nav ml-auto">
                 <li className="has-children">
-                    <Link to="#" className="nav-link">Legal issues</Link>
+                    <Link to="#" className="nav-link text-white">Legal issues</Link>
                     <ul className="dropdown mega-menu">
                     <div className="row">
                         <div className="col-lg-6">
@@ -55,7 +55,7 @@ const Header = () => {
                     </ul>
                 </li>
                 <li className="has-children">
-                    <Link to="#" className="nav-link">Start A Business</Link>
+                    <Link to="#" className="nav-link text-white">Start A Business</Link>
                     <ul className="dropdown mega-menu">
                     <div className="row">
                         <div className="col-lg-6">
@@ -73,7 +73,7 @@ const Header = () => {
                     </ul>
                 </li>
                 <li className="has-children">
-                    <Link to="#" className="nav-link">Compliance</Link>
+                    <Link to="#" className="nav-link text-white">Compliance</Link>
                     <ul className="dropdown mega-menu">
                     <div className="row">
                         <div className="col-lg-6">
@@ -92,7 +92,7 @@ const Header = () => {
                     </ul>
                 </li>
                 <li className="has-children">
-                    <Link to="#" className="nav-link">Goods and Services Tax</Link>
+                    <Link to="#" className="nav-link text-white">Goods and Services Tax</Link>
                     <ul className="dropdown mega-menu">
                     <div className="row">
                         <div className="col-lg-6">
@@ -112,7 +112,7 @@ const Header = () => {
                     </ul>
                 </li>
                 <li className="has-children">
-                    <Link to="#" className="nav-link">Income Tax</Link>
+                    <Link to="#" className="nav-link text-white">Income Tax</Link>
                     <ul className="dropdown mega-menu">
                     <div className="row">
                         <div className="col-lg-6">
@@ -281,4 +281,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default Skeleton;

@@ -39,7 +39,7 @@ const Form = ({ pageName }) => {
     <form className="book-form" onSubmit={handleSubmit}>
       <h3><span className="form-heading">{pageName}</span> Enquiry</h3>
       <div className="row align-items-center">
-        <div className="mb-3 mb-md-4 col-md-12">
+        <div className="mb-3 mb-md-1 col-md-12">
           <input
             value={values.name}
             onChange={handleChange}
@@ -49,9 +49,9 @@ const Form = ({ pageName }) => {
             className="form-control"
             placeholder="Name"
           />
-          {touched.name && errors.name && <p className="text-red">{errors.name}</p>}
+          {touched.name && errors.name && <p className="text-red font-size-14">{errors.name}</p>}
         </div>
-        <div className="mb-3 mb-md-4 col-md-12">
+        <div className="mb-3 mb-md-1 col-md-12">
           <input
             value={values.email}
             onChange={handleChange}
@@ -61,9 +61,9 @@ const Form = ({ pageName }) => {
             className="form-control"
             placeholder="Email"
           />
-          {touched.email && errors.email && <p className="text-red">{errors.email}</p>}
+          {touched.email && errors.email && <p className="text-red font-size-14">{errors.email}</p>}
         </div>
-        <div className="mb-3 mb-md-4 col-md-12">
+        <div className="mb-3 mb-md-1 col-md-12">
           <input
             value={values.contact}
             onChange={handleChange}
@@ -73,9 +73,9 @@ const Form = ({ pageName }) => {
             className="form-control"
             placeholder="Contact No"
           />
-          {touched.contact && errors.contact && <p className="text-red">{errors.contact}</p>}
+          {touched.contact && errors.contact && <p className="text-red font-size-14">{errors.contact}</p>}
         </div>
-        <div className="mb-3 mb-md-4 col-md-12">
+        <div className="mb-3 mb-md-1 col-md-12">
           <select onChange={handleChange} onBlur={handleBlur} name="relatedTo" className="form-control">
             <option value="">Related To</option>
             <option value="Lawyer">Lawyer</option>
@@ -83,14 +83,14 @@ const Form = ({ pageName }) => {
             <option value="Company Secretary">Company Secretary</option>
             <option value="Not sure">Not sure</option>
           </select>
-          {touched.relatedTo && errors.relatedTo && <p className="text-red">{errors.relatedTo}</p>}
+          {touched.relatedTo && errors.relatedTo && <p className="text-red font-size-14">{errors.relatedTo}</p>}
         </div>
         <input type="hidden" name="enquiryFor" value={values.enquiryFor} />
         <div className="col-md-12">
           <input
             type="submit"
             value="GET A QUOTE"
-            className="btn btn-primary btn-block py-3"
+            className="btn btn-primary btn-block py-3 text-white"
           />
         </div>
       </div>
