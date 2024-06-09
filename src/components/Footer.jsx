@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Footer = () => {
   return (
@@ -9,8 +10,11 @@ const Footer = () => {
         <div className="container">
         <div className="row">
             <div className="col-lg-3">
-            <h2 className="footer-heading mb-4">About Us</h2>
-            <p>
+            <Link to="/">
+                <img src="/images/legalsathi-logo.jpg" width={"100%"} alt="" />
+            </Link>
+            {/* <h2 className="footer-heading mb-4">About Us</h2> */}
+            <p className='mt-10'>
                 Far far away, behind the word mountains, far from the countries
                 Vokalia and Consonantia, there live the blind texts.
             </p>

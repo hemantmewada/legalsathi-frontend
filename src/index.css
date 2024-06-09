@@ -28,6 +28,9 @@
         width: 100% !important;
     }
 }
+.achievement-section .container{
+    text-align: center;
+}
 ul.dropdown.mega-menu{
     padding: 20px 50px !important;
     border-radius: 13px;
@@ -56,9 +59,9 @@ nav li{
     font-weight: bold;
     /* color: #fff; */
 }
-.form-title{
-    /* font-family: "poppins"; */
-}
+/* .form-title{
+    font-family: "poppins";
+} */
 .border-radius-10{
     border-radius: 10px;
 }
@@ -86,9 +89,39 @@ nav li{
 .achievements{
     width: 20%;
 }
-.achievements p{
-    /* font-family: "poppins"; */
-}
+/* .achievements p{
+    font-family: "poppins";
+} */
 .font-size-30{
     font-size: 30px;
+}
+.pt-12{
+    padding-top: 12px;
+}
+.mt-10{
+    margin-top: 10px;
+}
+.search {
+    position: absolute;
+    bottom: -21%;
+    right: 1%;
+    width: 30%;
+    outline: none;
+    border: none;
+}
+.cursor-pointer{
+    cursor: pointer;
+}
+.serarch-serives{
+    position: absolute;
+    top: 85px;
+    right: 0;
+    width: 32%;
+}
+.serarch-serives ul{
+    background: white;
+    max-height: 200px;
+    overflow-y: scroll;
+    text-align: left;
+    padding: 0 4%;
 }

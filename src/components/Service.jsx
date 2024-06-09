@@ -17,7 +17,12 @@ const Service = () => {
       <div className="container">
         <div className="row">
           <div className="col-md-6 col-lg-3 mb-4 mb-lg-0">
-            <img width={"100%"} src="https://www.indiafilings.com/if-web/assets/images/LEDGERS-Business-Platform.jpg" alt="Image" className="img-fluid border-radius-10" />
+            <div className="testimonial-2">
+              <img width={"100%"} src="https://www.indiafilings.com/if-web/assets/images/LEDGERS-Business-Platform.jpg" alt="Image" className="img-fluid border-radius-10" />
+              <h5 className='pt-12'>Document Required</h5>
+              <p className='mb-0'>PAN Card</p>
+              <p>Aadhaar Card</p>
+            </div>
           </div>
           <div className="col-md-6 col-lg-5">
             <h2 className="mb-4 section-heading">{pageName}</h2>
@@ -135,7 +140,7 @@ const Service = () => {
         </div>
       </div>
     </div>
-    <div className="site-section bg-light">
+    <div className="site-section achievement-section bg-light">
       <div className="container">
         <div className="row">
           {achievements.map((achievement, index) => (

@@ -328,31 +328,31 @@ export const documents = [
 export const achievements = [
     {
         id: 0,
-        icon: 'fa-regular fa-star',
+        icon: 'fa-solid fa-star',
         title: "10 Years",
         desc: "Of Experience",
     },
     {
         id: 1,
-        icon: 'fa-regular fa-star',
+        icon: 'fa-solid fa-gavel',
         title: "5000 +",
         desc: "Cases Solved",
     },
     {
         id: 2,
-        icon: 'fa-regular fa-star',
+        icon: 'fa-solid fa-award',
         title: "15 +",
         desc: "Awards Gained",
     },
     {
         id: 3,
-        icon: 'fa-regular fa-star',
+        icon: 'fa-solid fa-face-smile',
         title: "200 k +",
         desc: "Trusted Clients",
     },
     {
         id: 4,
-        icon: 'fa-regular fa-star',
+        icon: 'fa-solid fa-phone',
         title: "50 k+",
         desc: "Queries Solved",
     },
