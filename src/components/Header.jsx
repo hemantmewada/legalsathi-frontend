@@ -165,7 +165,7 @@ const Header = () => {
                                         <i onClick={() => setIsSearchBoxOpen(!isSearchBoxOpen)} className="fa-solid fa-magnifying-glass text-white cursor-pointer"></i>
                                         {isSearchBoxOpen && (
                                             <>
-                                                <input value={searchValue} onChange={handleChange} className='search' type="search" name="" id="" />
+                                                <input value={searchValue} onChange={handleChange} className='search' type="search" placeholder='Search any service...' />
                                                 <div className='serarch-serives dropdown'>
                                                     <ul>
                                                         {searchServices.map((service) => (
