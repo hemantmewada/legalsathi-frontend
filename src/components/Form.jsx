@@ -87,7 +87,7 @@ const Form = ({ pageName }) => {
           {touched.relatedTo && errors.relatedTo && <p className="text-red font-size-14">{errors.relatedTo}</p>}
         </div>
         <input type="hidden" name="enquiryFor" value={values.enquiryFor} />
-        <div className="col-md-12">
+        <div className="col-md-12 submit-btn-column">
           {
             loading ? (
               <Loader />

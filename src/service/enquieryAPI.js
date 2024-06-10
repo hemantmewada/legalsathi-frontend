@@ -15,7 +15,7 @@ const enquieryAPI = () => {
             setLoading(false);
             toast.success(data.message);
             setTimeout(() => {
-                window.location.reload()
+                window.location.reload();
             }, 1000);
         } catch (error) {
             setLoading(false);
