@@ -9,6 +9,9 @@ const Skeleton = () => {
       <Header />
       <Outlet />
       <Footer />
+      <div className="wa">
+        <a href="https://wa.me/+919644888815?text=Hello"><img src="images/wa.png" alt="" /></a>
+      </div>
     </div>
   );
 };

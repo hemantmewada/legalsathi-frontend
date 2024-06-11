@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 const Footer = () => {
+    const currentYear = new Date().getFullYear();
   return (
     <footer
         className="site-footer"
@@ -19,22 +20,22 @@ const Footer = () => {
                 Vokalia and Consonantia, there live the blind texts.
             </p>
             <ul className="list-unstyled social">
-                <li>
+                <li className='mr-4'>
                 <a href="#">
                     <span className="icon-facebook" />
                 </a>
                 </li>
-                <li>
+                <li className='mr-4'>
                 <a href="#">
                     <span className="icon-instagram" />
                 </a>
                 </li>
-                <li>
+                <li className='mr-4'>
                 <a href="#">
                     <span className="icon-twitter" />
                 </a>
                 </li>
-                <li>
+                <li className='mr-4'>
                 <a href="#">
                     <span className="icon-linkedin" />
                 </a>
@@ -130,11 +131,8 @@ const Footer = () => {
             <div className="col-md-12">
             <div className="border-top pt-5">
                 <p>
-                Copyright © All rights reserved | This template is made with{" "}
-                <i className="icon-heart text-danger" aria-hidden="true" /> by{" "}
-                <a href="https://colorlib.com/" target="_blank">
-                    Colorlib
-                </a>
+                Copyright © {currentYear} All rights reserved | Legalsathi made with {" "}
+                <a href="https://github.com/hemantmewada/" target="_blank"><i className="icon-heart text-danger" aria-hidden="true" /></a>
                 </p>
             </div>
             </div>

@@ -229,3 +229,12 @@ nav li{
         max-width: 1363px;
     }
 }
+.mr-4{
+    margin-right: 4px;
+}
+.wa{
+    position: fixed;
+    right: 5%;
+    bottom: 5%;
+    z-index: 999;
+}
