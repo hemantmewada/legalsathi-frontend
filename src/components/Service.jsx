@@ -1,13 +1,15 @@
 import React, { useEffect, useState } from 'react'
 import Form from './Form'
 import { useParams } from 'react-router-dom';
-import services, { achievements, documents } from '../config/data';
+import services, { achievements } from '../config/data';
 
 const Service = () => {
   const {service} = useParams();
   const [pageName, setPageName] = useState("");
+  const [singleService, setSingleService] = useState({});
   useEffect(() => {
     const single = services.filter((singleService) => singleService.slug == service)[0];
+    setSingleService(single);
     setPageName(single.name);
   }, [service])
   
@@ -18,10 +20,16 @@ const Service = () => {
         <div className="row">
           <div className="col-md-6 col-lg-3 mb-4 mb-lg-0">
             <div className="testimonial-2">
-              <img width={"100%"} src="https://www.indiafilings.com/if-web/assets/images/LEDGERS-Business-Platform.jpg" alt="Image" className="img-fluid border-radius-10" />
+              {singleService.image && (
+                <img width={"100%"} src={`/images/services/${singleService.image}`} alt="Image" className="img-fluid border-radius-10" />
+              )}
               <h5 className='pt-12'>Document Required</h5>
-              <p className='mb-0'>PAN Card</p>
-              <p>Aadhaar Card</p>
+              {singleService.documents?.[0] && (
+                <p className=''>1. {singleService.documents?.[0]}</p>
+              )}
+              {singleService.documents?.[1] && (
+                <p className=''>2. {singleService.documents?.[1]}</p>
+              )}
             </div>
           </div>
           <div className="col-md-6 col-lg-5">
@@ -68,7 +76,7 @@ const Service = () => {
           </div>
         </div>
         <div className="row">
-          {documents.map((document, index) => (
+          {services[singleService.id]?.documents?.map((document, index) => (
             <div key={index} className="mb-4 mb-md-1 col-md-6">
               <div className="testimonial-2 p-15">
                 <div className="d-flex v-card align-items-center">

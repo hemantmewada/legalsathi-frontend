@@ -5,56 +5,115 @@ const services = [
         name: "Legal Notice Reply",
         slug: "legal-notice-reply",
         type: "legal-issues",
-        position: "first-half"
+        position: "first-half",
+        documents: [],
+        image: "Trademark-Infringement_Notice.png",
     },
     {
         id: 1,
         name: "Legal Notice Preparation",
         slug: "legal-notice-preparation",
         type: "legal-issues",
-        position: "first-half"
+        position: "first-half",
+        documents: [
+            "Basic Information like full name, address, and contact details of the sender of the notice",
+            "Copies of any contracts, agreements, or relevant documents that pertain to the issue being addressed in the notice.",
+            "Basic Information like full name, address, and contact details of the receiver of the notice.",
+            "Clear statement of the action or remedy being demanded from the recipient to rectify the situation.",
+            "Legal grounds or reasons for issuing the notice. This could include breach of contract, violation of rights, non-payment of dues, etc.",
+            "Specify a reasonable deadline by which the recipient must comply with the demands outlined in the notice.",
+        ],
+        image: "Legal-Notice-Preparation.jpg",
     },
     {
         id: 2,
         name: "Legal Consultation",
         slug: "legal-consultation",
         type: "legal-issues",
-        position: "first-half"
+        position: "first-half",
+        documents: [
+            "PAN Card",
+            "Aadhar Card",
+        ],
+        image: "Legal-Consultation.jpeg",
     },
     {
         id: 3,
         name: "Trademark Registration",
         slug: "trademark-registration",
         type: "legal-issues",
-        position: "second-half"
+        position: "second-half",
+        documents: [
+            "Aadhaar card of applicant",
+            "Brand Logo (To be Trademarked)",
+            "Aadhaar Card / Driving Liscence / Voter ID (any one) of Applicant",
+            "Start-up Recognition (optional)",
+            "Certificate of incorporation (other than Individual applicant)",
+            "MSME Registration (optional)",
+            "Brand Name (To be Trademarked)",
+            "Authorization letter (POA)",
+        ],
+        image: "Trademark-Registration-Online.png",
     },
     {
         id: 4,
         name: "Copyright Registration",
         slug: "copyright-registration",
         type: "legal-issues",
-        position: "second-half"
+        position: "second-half",
+        documents: [
+            "PAN Card",
+            "Aadhar Card ",
+            "Incorporation Certificate",
+            "Company PAN",
+            "Company TAN",
+            "NOC from Publisher",
+            "NOC from Author",
+        ],
+        image: "Copyright_Registration.png",
     },
     {
         id: 5,
         name: "Patent Registration",
         slug: "patent-registration",
         type: "legal-issues",
-        position: "second-half"
+        position: "second-half",
+        documents: [
+            "Patent Registration Application",
+            "Complete Specifications",
+            "Statement and Undertaking",
+            "Inventor's Declaration",
+            "Proof of Right",
+            "Power of Authority",
+            "Priority Documents",
+            "Permission from National Biodiversity Authority",
+            "Source of Biological Material",
+        ],
+        image: "Patent-Registration.png",
     },
     {
         id: 6,
         name: "Design Registration",
         slug: "design-registration",
         type: "legal-issues",
-        position: "second-half"
+        position: "second-half",
+        documents: [
+            "Address Proof",
+            "Identity Proof",
+            "Incorporation Certificate",
+            "MSME Certificate",
+            "Six angles pictures of Design",
+        ],
+        image: "Design-Registration.png",
     },
     {
         id: 7,
         name: "Trademark Renewal",
         slug: "trademark-renewal",
         type: "legal-issues",
-        position: "second-half"
+        position: "second-half",
+        documents: ["Form-48"],
+        image: "Trademark-Renewal.png",
     },
     // Start A Business
     {
@@ -62,49 +121,117 @@ const services = [
         name: "Proprietorship",
         slug: "proprietorship",
         type: "start-a-business",
-        position: "first-half"
+        position: "first-half",
+        documents: ["PAN Card", "Aadhaar Card"],
+        image: "proprietorship-registration.webp",
     },
     {
         id: 9,
         name: "Partnership",
         slug: "partnership",
         type: "start-a-business",
-        position: "first-half"
+        position: "first-half",
+        documents: [
+            "Pan Card",
+            "Aadhar Card",
+            "Rental Agreement",
+            "Electricity Bill",
+            "NOC from Landlord",
+        ],
+        image: "Partnership-Firm-Registration.png",
     },
     {
         id: 10,
         name: "Private Limited Company",
         slug: "private-limited-company",
         type: "start-a-business",
-        position: "first-half"
+        position: "first-half",
+        documents: [
+            "PAN Card",
+            "Passport (Foreign Nationals Only)",
+            "Aadhaar Card",
+            "Foreign Government",
+            "Board Resolution Authorising Investment",
+            "Investing Company Address Proof",
+            "Passport Size Photo",
+            "Recent Utility Bill",
+            "Name Significance Letter",
+            "Specimen"
+        ],
+        image: "company-registration.webp",
     },
     {
         id: 11,
         name: "One Person Company",
         slug: "one-person-company",
         type: "start-a-business",
-        position: "second-half"
+        position: "second-half",
+        documents: [
+            "PAN Card",
+            "Passport",
+            "Voters Identity Card",
+            "Ration Card",
+            "Driving License",
+            "Aadhaar Card",
+            "MOA Subscriber Sheet",
+            "AOA Subscriber Sheet",
+            "Passport Size Photo",
+            "Recent Utility Bill - Business Place",
+            "Specimen",
+            "NOC from Landlord",
+            "Board Resolution Authorising Investment",
+            "Foreign Government",
+            "Investing Company Address Proof",
+            "Name Significance Letter",
+        ],
+        image: "opc-registration.webp",
     },
     {
         id: 12,
         name: "Limited Liability Partnership",
         slug: "limited-liability-partnership",
         type: "start-a-business",
-        position: "second-half"
+        position: "second-half",
+        documents: [
+            "PAN Card",
+            "Passport (Foreign Nationals Only)",
+            "Voters Identity Card",
+            "Ration Card",
+            "Driving License",
+            "Aadhaar Card",
+            "Passport Size Photo",
+            "Recent Utility Bill"
+        ],
+        image: "llp-registration.webp",
     },
     {
         id: 13,
         name: "Nidhi Company",
         slug: "nidhi-company",
         type: "start-a-business",
-        position: "second-half"
+        position: "second-half",
+        documents: [
+            "Recent Utility Bill",
+            "Foreign Government - Address Proof",
+            "Board Resolution Authorising Investment",
+            "Investing Company Address Proof",
+            "Name Significance Letter",
+            "Specimen"
+        ],
+        image: "Nidhi-Company-india.png",
     },
     {
         id: 14,
         name: "Section 8 Company",
         slug: "section-8-company",
         type: "start-a-business",
-        position: "second-half"
+        position: "second-half",
+        documents: [
+            "Recent Utility Bill",
+            "Aadhaar Card",
+            "Specimen"
+        ],
+        image: "Section-8-Company-india.png",
     },
     // Compliance
     {
@@ -112,56 +239,113 @@ const services = [
         name: "Proprietorship Compliance",
         slug: "proprietorship-compliance",
         type: "compliance",
-        position: "first-half"
+        position: "first-half",
+        documents: [
+            "PAN Card",
+            "Bank Account Details",
+            "Aadhar Card",
+            "Advance Tax Payment Challan",
+            "Form 16, 16A, and 26AS"
+        ],
+        image: "proprietorship-registration.webp",
     },
     {
         id: 16,
         name: "Partnership Compliance",
         slug: "partnership-compliance",
         type: "compliance",
-        position: "first-half"
+        position: "first-half",
+        documents: [],
+        image: "partnership-compliance.png",
     },
     {
         id: 17,
         name: "Company Compliance",
         slug: "company-compliance",
         type: "compliance",
-        position: "first-half"
+        position: "first-half",
+        documents: ["Circulation of Financial Statements and Other Relevant Documents"],
+        image: "company_compliance.png",
     },
     {
         id: 18,
         name: "LLP Compliance",
         slug: "llp-compliance",
         type: "compliance",
-        position: "first-half"
+        position: "first-half",
+        documents: [],
+        image: "LLP_compliance.png"
     },
     {
         id: 19,
         name: "Payroll",
         slug: "payroll",
         type: "compliance",
-        position: "second-half"
+        position: "second-half",
+        documents: [],
+        image: "Payroll-Compliance.jpg"
     },
     {
         id: 20,
         name: "PF Registration",
         slug: "pf-registration",
         type: "compliance",
-        position: "second-half"
+        position: "second-half",
+        documents: [
+            "Business Registration Certificate",
+            "Proof of Identity",
+            "Proof of Address",
+            "Bank Details",
+            "Proof of Business Activity",
+            "Employee Details",
+            "Employment Details",
+        ],
+        image: "PF-Registration.png",
     },
     {
         id: 21,
         name: "PF Return Filing",
         slug: "pf-return-filing",
         type: "compliance",
-        position: "second-half"
+        position: "second-half",
+        documents: [
+            "Bank Statement",
+            "Payment Challan",
+            "PF Contribution",
+            "PAN Card",
+            "Aadhar Card",
+            "Balance Sheet",
+            "Monthly Pay Sheet",
+            "Incorporation Certificate"
+        ],
+        image: "PF-Return-Filing.png",
     },
     {
         id: 22,
         name: "ESI Registration",
         slug: "esi-registration",
         type: "compliance",
-        position: "second-half"
+        position: "second-half",
+        documents: [
+            "Factories Act Registration Certificate",
+            "Shops and Establishment Act Registration Certificate",
+            "Company Registration Certificate",
+            "Partnership Deed",
+            "Goods and Services Tax (GST) Registration Certificate",
+            "Memorandum of Association (MoA)",
+            "Articles of Association (AoA)",
+            "Recent Utility Bill",
+            "Rental Agreement",
+            "Property Tax Receipt",
+            "Employee Details",
+            "PAN Cards",
+            "Employee Compensation Details",
+            "Banking Information",
+            "List of Directors",
+            "List of Shareholders",
+            "Employee Attendance Register"
+        ],
+        image: "ESI-Registration.png",
     },
     // Goods and Services Tax
     {
@@ -169,63 +353,154 @@ const services = [
         name: "GST Registration",
         slug: "gst-registration",
         type: "goods-and-services-tax",
-        position: "first-half"
+        position: "first-half",
+        documents: [
+            "Electricity Bill",
+            "Telephone Bill",
+            "Property Tax Receipt",
+            "Lease / Rent Agreement",
+            "Passport Size Photo",
+            "Partnership Deed",
+            "Incorporation Certificate",
+            "PAN Card",
+            "Aadhaar Card",
+            "Legal Ownership Document"
+        ],
+        image: "GST-Registration_LEDGERS.png",
     },
     {
         id: 24,
         name: "GST Return Filing",
         slug: "gst-return-filing",
         type: "goods-and-services-tax",
-        position: "first-half"
+        position: "first-half",
+        documents: [
+            "One time: GST Number or GST Registration Certificate",
+            "Monthly: Starter and Basic plans:: GSTR - 3B (Soft copy)",
+            "Monthly: Starter and Basic plans:: GSTR - 1 (Soft copy)",
+            "Monthly: Starter and Basic plans:: Normal Excel file of Sales & Purchase",
+            "Monthly: Pro and Premium plans: Sales & Purchase Invoices",
+            "Monthly: Pro and Premium plans: GSTR - 3B (Soft copy)",
+            "Monthly: Pro and Premium plans: GSTR - 1 (Soft copy)",
+            "Monthly: Pro and Premium plans: Normal Excel file of Sales & Purchase",
+        ],
+        image: "GST-Return-Filing-Accountant.jpg",
     },
     {
         id: 25,
         name: "GST LUT Filing",
         slug: "gst-lut-filing",
         type: "goods-and-services-tax",
-        position: "first-half"
+        position: "first-half",
+        documents: [
+            "LUT Cover Letter",
+            "Eligibility",
+            "Copy of GST Registration",
+            "PAN Card of Entity",
+            "KYC of Authorized Person",
+            "GST RFD 11 Form",
+            "Copy of IEC Code",
+            "Canceled Cheque",
+            "Authorized Letter"
+        ],
+        image: "GST-LUT-Form-india.jpg",
     },
     {
         id: 26,
         name: "GST Registration Cancellation",
         slug: "gst-registration-cancellation",
         type: "goods-and-services-tax",
-        position: "first-half"
+        position: "first-half",
+        documents: [
+            "PAN Card",
+            "Aadhar Card",
+            "Last Return Details",
+            "Company Authority Details",
+            "Tax Particulars"
+        ],
+        image: "GST-Registration_cancellation.png",
     },
     {
         id: 27,
         name: "GST Annual Return",
         slug: "gst-annual-return",
         type: "goods-and-services-tax",
-        position: "first-half"
+        position: "first-half",
+        documents: ["GSTIN", "Invoice"],
+        image: "GST-Annual-Return-Filing-GSTR-9.jpg",
     },
     {
         id: 28,
         name: "GST Invoicing",
         slug: "gst-invoicing",
         type: "goods-and-services-tax",
-        position: "second-half"
+        position: "second-half",
+        documents: [
+            "Name, Address, and GSTIN of the Supplier",
+            "Tax Invoice Number",
+            "Date of Issue",
+            "Name, Address, and GSTIN of the Recipient (if registered)",
+            "Name and Address of the Recipient (if unregistered and value > Rs.50,000)",
+            "Address of Delivery",
+            "State Name and State Code",
+            "HSN Code of Goods or Service Accounting Code for Services",
+            "Description of the Goods/Services",
+            "Quantity of Goods and Unit in UQC",
+            "Total Value of Supply of Goods/Services",
+            "Taxable Value of Supply after Discount",
+            "Applicable Rate of GST",
+            "Amount of Tax with Breakup",
+            "Place of Supply and Destination State for Inter-State Sales",
+            "Delivery Address (if different from Place of Supply)",
+            "Whether GST is Payable on Reverse Charge Basis",
+            "Signature of the Supplier or Authorised Representative"
+        ],
+        image: "GST-Invoicing.jpg",
     },
     {
         id: 29,
         name: "GST eInvoicing",
         slug: "gst-einvoicing",
         type: "goods-and-services-tax",
-        position: "second-half"
+        position: "second-half",
+        documents: [
+            "Basic Details",
+            "Invoice Period",
+            "Preceding Document / Contract Reference",
+            "Receipt / Contract References",
+            "Supplier Information",
+            "Buyer Information",
+            "Payee Information",
+            "Delivery Information"
+        ],
+        image: "E-Invoice.png",
     },
     {
         id: 30,
         name: "eWay Bill",
         slug: "eway-bill",
         type: "goods-and-services-tax",
-        position: "second-half"
+        position: "second-half",
+        documents: [
+            "Tax invoice/Bill of supply/Bill of entry.",
+            "Delivery challan in scenarios where the owner of the goods or the transporter transports goods for reasons, other than by way of supply."
+        ],
+        image: "eWay-Bill.png",
     },
     {
         id: 31,
         name: "Input Tax Credit",
         slug: "input-tax-credit",
         type: "goods-and-services-tax",
-        position: "second-half"
+        position: "second-half",
+        documents: [
+            "Invoice",
+            "Debit Notes",
+            "Bill of Entry",
+            "Credit Notes",
+            "Supply Bill"
+        ],
+        image: "GST_ITC.png",
     },
     // Income Tax
     {
@@ -233,84 +508,237 @@ const services = [
         name: "Personal Tax Filing",
         slug: "personal-tax-filing",
         type: "income-tax",
-        position: "first-half"
+        position: "first-half",
+        documents: [
+            "Aadhaar Card",
+            "PAN Card",
+            "Bank Account Details",
+            "Form 16",
+            "Form 26AS",
+            "Receipts for Tax Exemptions or Deductions",
+            "Bank Interest Statements",
+            "Capital Gains Statements",
+            "Documents Related to Foreign Assets and Income"
+        ],
+        image: "personal-tax-return-filing.png",
     },
     {
         id: 33,
         name: "Business Tax Filing",
         slug: "business-tax-filing",
         type: "income-tax",
-        position: "first-half"
+        position: "first-half",
+        documents: [
+            "Aadhaar Card",
+            "PAN Card",
+            "TDS Certificate",
+            "Loan Documents for Claiming Rebates",
+            "Financial Year's Balance Sheet",
+            "Record of Audit",
+            "Copy of the Challan of Income Tax Payments"
+        ],
+        image: "business-tax-Filing-indiafilings.png",
     },
     {
         id: 34,
         name: "Tax Notice",
         slug: "tax-notice",
         type: "income-tax",
-        position: "first-half"
+        position: "first-half",
+        documents: [
+            "TDS Certificate",
+            "Salary Slips",
+            "Income Tax notice",
+            "Investment Details",
+        ],
+        image: "IT-NOTICE-RESPONSE.jpg",
     },
     {
         id: 35,
         name: "TDS Filing",
         slug: "tds-filing",
         type: "income-tax",
-        position: "first-half"
+        position: "first-half",
+        documents: [
+            "TDS Acknowledgement",
+            "PAN Card",
+            "TDS Certificate",
+            "Tax Payment Challan",
+            "Bank Statement"
+        ],
+        image: "TFD-return-filing.png",
     },
     {
         id: 36,
         name: "Form 16",
         slug: "form-16",
         type: "income-tax",
-        position: "first-half"
+        position: "first-half",
+        documents: [
+            "Streamlined ITR Filing",
+            "Independent ITR Preparation",
+            "Tax Deposit Verification",
+            "TDS Confirmation",
+            "Income Documentation",
+            "Loan Verification",
+            "Onboarding Requirement",
+            "Visa Application"
+        ],
+        image: "form-16-india.png",
     },
     {
         id: 37,
         name: "ITR-1 Return",
         slug: "itr-1-return",
         type: "income-tax",
-        position: "second-half"
+        position: "second-half",
+        documents: [
+            "Form 16",
+            "Bank Statement",
+            "Details of Other Income",
+            "Home Loan Repayment Schedule",
+            "Rental Receipts",
+            "Donation Receipts",
+            "Insurance Payments",
+            "Mutual Fund Investments",
+            "Medical Bills",
+            "School / College Bills",
+            "Salary Slips"
+        ],
+        image: "ITR-1-return-filing.png",
     },
     {
         id: 38,
         name: "ITR-2 Return",
         slug: "itr-2-return",
         type: "income-tax",
-        position: "second-half"
+        position: "second-half",
+        documents: [
+            "Form 16",
+            "Bank Statement",
+            "Details of Other Income",
+            "Home Loan Repayment Schedule",
+            "Rental Receipts",
+            "Donation Receipts",
+            "Insurance Payments",
+            "Mutual Fund Investments",
+            "Medical Bills",
+            "School / College Bills",
+            "Salary Slips"
+        ],
+        image: "ITR-2-return-filing.png",
     },
     {
         id: 39,
         name: "ITR-3 Return",
         slug: "itr-3-return",
         type: "income-tax",
-        position: "second-half"
+        position: "second-half",
+        documents: [
+            "Form 16 / Salary Slips (if income from salary)",
+            "Rental Agreement (if applicable)",
+            "Proof of Rental Income (if applicable)",
+            "Proof of Investments to Claim Tax Exemption (if applicable)",
+            "Form 26AS",
+            "Monthly Purchase Bill",
+            "Monthly Sales Bill",
+            "Sales Return Details",
+            "Purchase Return Details",
+            "Tax Paid Challans for GST",
+            "Day-to-Day Administration Expenses and General Expenses Details",
+            "Fixed Assets Invoice Copy (if applicable)",
+            "Investment Details Made by Cash (if applicable)",
+            "Investment Details Made Through Bank (if applicable)",
+            "Proof of Source of Cash Inflow and Cash Outflow (if applicable)",
+            "Outstanding Receivables and Payables",
+            "Bank Statement",
+            "Break-Up of Bank Statement",
+            "Loan Details from Bank",
+            "Proof of Foreign Income (if applicable)",
+            "Details of Foreign Assets (if applicable)"
+        ],
+        image: "ITR-3-return-filing.png",
     },
     {
         id: 40,
         name: "ITR-4 Return",
         slug: "itr-4-return",
         type: "income-tax",
-        position: "second-half"
+        position: "second-half",
+        documents: [
+            "Bank Statement",
+            "PAN Card",
+            "Aadhar Card"
+        ],
+        image: "ITR-4-return-filing.png",
     },
     {
         id: 41,
         name: "ITR-5 Return",
         slug: "itr-5-return",
         type: "income-tax",
-        position: "second-half"
+        position: "second-half",
+        documents: [
+            "Monthly Purchase Bill",
+            "Monthly Sales Bill",
+            "Sales Return Details",
+            "Purchase Return Details",
+            "Tax Paid Challans for GST",
+            "From 26AS",
+            "Day-to-Day Administration Expenses and General Expenses Details",
+            "Rental Agreement (if applicable)",
+            "Fixed Assets Invoice Copy (if Applicable)",
+            "Investment Details Made by Cash",
+            "Investment Details Made Through Bank",
+            "Proof of Source of Cash Inflow and Cash Outflow",
+            "Loan Details from Bank or Third Party",
+            "Outstanding Receivables and Payables",
+            "Company's PAN and Two DSCs",
+            "Details of Bank Used for Business Transactions (Account Number, IFSC Code)",
+            "Statement from Bank Used for Business Transactions",
+            "Break-Up of Statement from Bank Used for Business Transactions"
+        ],
+        image: "ITR-5-return-filing.png",
     },
     {
         id: 42,
         name: "ITR-6 Return",
         slug: "itr-6-return",
         type: "income-tax",
-        position: "second-half"
+        position: "second-half",
+        documents: [
+            "Monthly Purchase Bill",
+            "Monthly Sales Bill",
+            "Sales Return Details",
+            "Purchase Return Details",
+            "Tax Paid Challans for GST",
+            "From 26AS",
+            "Day-to-Day Administration Expenses and General Expenses Details",
+            "Rental Agreement (if applicable)",
+            "Fixed Assets Invoice Copy (if Applicable)",
+            "Investment Details Made by Cash",
+            "Investment Details Made Through Bank",
+            "Proof of Source of Cash Inflow and Cash Outflow",
+            "Loan Details from Bank or Third Party",
+            "Outstanding Receivables and Payables",
+            "Company's PAN and Two DSCs",
+            "Details of Bank Used for Business Transactions (Account Number, IFSC Code)",
+            "Statement from Bank Used for Business Transactions",
+            "Break-Up of Statement from Bank Used for Business Transactions"
+        ],
+        image: "ITR-6-return-filing.png",
     },
     {
         id: 43,
         name: "ITR-7 Return",
         slug: "itr-7-return",
         type: "income-tax",
-        position: "second-half"
+        position: "second-half",
+        documents: [
+            "Statement from Bank",
+            "Incorporation Certificate"
+        ],
+        image: "ITR-7-return-filing.png",
     }
 ];
 

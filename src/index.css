@@ -223,3 +223,9 @@ nav li{
     display: flex;
     justify-content: center;
 }
+/* container override css */
+@media (min-width: 1200px) {
+    .container{
+        max-width: 1363px;
+    }
+}
