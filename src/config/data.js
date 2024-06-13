@@ -1,7 +1,6 @@
 const services = [
     // Legal issues
     {
-        id: 0,
         name: "Legal Notice Reply",
         slug: "legal-notice-reply",
         type: "legal-issues",
@@ -10,7 +9,6 @@ const services = [
         image: "Trademark-Infringement_Notice.png",
     },
     {
-        id: 1,
         name: "Legal Notice Preparation",
         slug: "legal-notice-preparation",
         type: "legal-issues",
@@ -26,7 +24,6 @@ const services = [
         image: "Legal-Notice-Preparation.jpg",
     },
     {
-        id: 2,
         name: "Legal Consultation",
         slug: "legal-consultation",
         type: "legal-issues",
@@ -38,7 +35,6 @@ const services = [
         image: "Legal-Consultation.jpeg",
     },
     {
-        id: 3,
         name: "Trademark Registration",
         slug: "trademark-registration",
         type: "legal-issues",
@@ -56,7 +52,6 @@ const services = [
         image: "Trademark-Registration-Online.png",
     },
     {
-        id: 4,
         name: "Copyright Registration",
         slug: "copyright-registration",
         type: "legal-issues",
@@ -73,7 +68,6 @@ const services = [
         image: "Copyright_Registration.png",
     },
     {
-        id: 5,
         name: "Patent Registration",
         slug: "patent-registration",
         type: "legal-issues",
@@ -92,7 +86,6 @@ const services = [
         image: "Patent-Registration.png",
     },
     {
-        id: 6,
         name: "Design Registration",
         slug: "design-registration",
         type: "legal-issues",
@@ -107,7 +100,6 @@ const services = [
         image: "Design-Registration.png",
     },
     {
-        id: 7,
         name: "Trademark Renewal",
         slug: "trademark-renewal",
         type: "legal-issues",
@@ -117,7 +109,6 @@ const services = [
     },
     // Start A Business
     {
-        id: 8,
         name: "Proprietorship",
         slug: "proprietorship",
         type: "start-a-business",
@@ -126,7 +117,6 @@ const services = [
         image: "proprietorship-registration.webp",
     },
     {
-        id: 9,
         name: "Partnership",
         slug: "partnership",
         type: "start-a-business",
@@ -141,7 +131,6 @@ const services = [
         image: "Partnership-Firm-Registration.png",
     },
     {
-        id: 10,
         name: "Private Limited Company",
         slug: "private-limited-company",
         type: "start-a-business",
@@ -161,7 +150,26 @@ const services = [
         image: "company-registration.webp",
     },
     {
-        id: 11,
+        name: "Business Registration",
+        slug: "business-registration",
+        type: "start-a-business",
+        position: "first-half",
+        documents: [
+            "PAN Card",
+            "Passport (Foreign Nationals Only)",
+            "Aadhaar Card",
+            "Foreign Government",
+            "Board Resolution Authorising Investment",
+            "Investing Company Address Proof",
+            "Passport Size Photo",
+            "Recent Utility Bill",
+            "Name Significance Letter",
+            "Specimen"
+        ],
+        image: "",
+        isFeatured: true
+    },
+    {
         name: "One Person Company",
         slug: "one-person-company",
         type: "start-a-business",
@@ -187,7 +195,6 @@ const services = [
         image: "opc-registration.webp",
     },
     {
-        id: 12,
         name: "Limited Liability Partnership",
         slug: "limited-liability-partnership",
         type: "start-a-business",
@@ -205,7 +212,6 @@ const services = [
         image: "llp-registration.webp",
     },
     {
-        id: 13,
         name: "Nidhi Company",
         slug: "nidhi-company",
         type: "start-a-business",
@@ -221,7 +227,6 @@ const services = [
         image: "Nidhi-Company-india.png",
     },
     {
-        id: 14,
         name: "Section 8 Company",
         slug: "section-8-company",
         type: "start-a-business",
@@ -234,122 +239,113 @@ const services = [
         image: "Section-8-Company-india.png",
     },
     // Compliance
-    {
-        id: 15,
-        name: "Proprietorship Compliance",
-        slug: "proprietorship-compliance",
-        type: "compliance",
-        position: "first-half",
-        documents: [
-            "PAN Card",
-            "Bank Account Details",
-            "Aadhar Card",
-            "Advance Tax Payment Challan",
-            "Form 16, 16A, and 26AS"
-        ],
-        image: "proprietorship-registration.webp",
-    },
-    {
-        id: 16,
-        name: "Partnership Compliance",
-        slug: "partnership-compliance",
-        type: "compliance",
-        position: "first-half",
-        documents: [],
-        image: "partnership-compliance.png",
-    },
-    {
-        id: 17,
-        name: "Company Compliance",
-        slug: "company-compliance",
-        type: "compliance",
-        position: "first-half",
-        documents: ["Circulation of Financial Statements and Other Relevant Documents"],
-        image: "company_compliance.png",
-    },
-    {
-        id: 18,
-        name: "LLP Compliance",
-        slug: "llp-compliance",
-        type: "compliance",
-        position: "first-half",
-        documents: [],
-        image: "LLP_compliance.png"
-    },
-    {
-        id: 19,
-        name: "Payroll",
-        slug: "payroll",
-        type: "compliance",
-        position: "second-half",
-        documents: [],
-        image: "Payroll-Compliance.jpg"
-    },
-    {
-        id: 20,
-        name: "PF Registration",
-        slug: "pf-registration",
-        type: "compliance",
-        position: "second-half",
-        documents: [
-            "Business Registration Certificate",
-            "Proof of Identity",
-            "Proof of Address",
-            "Bank Details",
-            "Proof of Business Activity",
-            "Employee Details",
-            "Employment Details",
-        ],
-        image: "PF-Registration.png",
-    },
-    {
-        id: 21,
-        name: "PF Return Filing",
-        slug: "pf-return-filing",
-        type: "compliance",
-        position: "second-half",
-        documents: [
-            "Bank Statement",
-            "Payment Challan",
-            "PF Contribution",
-            "PAN Card",
-            "Aadhar Card",
-            "Balance Sheet",
-            "Monthly Pay Sheet",
-            "Incorporation Certificate"
-        ],
-        image: "PF-Return-Filing.png",
-    },
-    {
-        id: 22,
-        name: "ESI Registration",
-        slug: "esi-registration",
-        type: "compliance",
-        position: "second-half",
-        documents: [
-            "Factories Act Registration Certificate",
-            "Shops and Establishment Act Registration Certificate",
-            "Company Registration Certificate",
-            "Partnership Deed",
-            "Goods and Services Tax (GST) Registration Certificate",
-            "Memorandum of Association (MoA)",
-            "Articles of Association (AoA)",
-            "Recent Utility Bill",
-            "Rental Agreement",
-            "Property Tax Receipt",
-            "Employee Details",
-            "PAN Cards",
-            "Employee Compensation Details",
-            "Banking Information",
-            "List of Directors",
-            "List of Shareholders",
-            "Employee Attendance Register"
-        ],
-        image: "ESI-Registration.png",
-    },
+    // {
+    //     name: "Proprietorship Compliance",
+    //     slug: "proprietorship-compliance",
+    //     type: "compliance",
+    //     position: "first-half",
+    //     documents: [
+    //         "PAN Card",
+    //         "Bank Account Details",
+    //         "Aadhar Card",
+    //         "Advance Tax Payment Challan",
+    //         "Form 16, 16A, and 26AS"
+    //     ],
+    //     image: "proprietorship-registration.webp",
+    // },
+    // {
+    //     name: "Partnership Compliance",
+    //     slug: "partnership-compliance",
+    //     type: "compliance",
+    //     position: "first-half",
+    //     documents: [],
+    //     image: "partnership-compliance.png",
+    // },
+    // {
+    //     name: "Company Compliance",
+    //     slug: "company-compliance",
+    //     type: "compliance",
+    //     position: "first-half",
+    //     documents: ["Circulation of Financial Statements and Other Relevant Documents"],
+    //     image: "company_compliance.png",
+    // },
+    // {
+    //     name: "LLP Compliance",
+    //     slug: "llp-compliance",
+    //     type: "compliance",
+    //     position: "first-half",
+    //     documents: [],
+    //     image: "LLP_compliance.png"
+    // },
+    // {
+    //     name: "Payroll",
+    //     slug: "payroll",
+    //     type: "compliance",
+    //     position: "second-half",
+    //     documents: [],
+    //     image: "Payroll-Compliance.jpg"
+    // },
+    // {
+    //     name: "PF Registration",
+    //     slug: "pf-registration",
+    //     type: "compliance",
+    //     position: "second-half",
+    //     documents: [
+    //         "Business Registration Certificate",
+    //         "Proof of Identity",
+    //         "Proof of Address",
+    //         "Bank Details",
+    //         "Proof of Business Activity",
+    //         "Employee Details",
+    //         "Employment Details",
+    //     ],
+    //     image: "PF-Registration.png",
+    // },
+    // {
+    //     name: "PF Return Filing",
+    //     slug: "pf-return-filing",
+    //     type: "compliance",
+    //     position: "second-half",
+    //     documents: [
+    //         "Bank Statement",
+    //         "Payment Challan",
+    //         "PF Contribution",
+    //         "PAN Card",
+    //         "Aadhar Card",
+    //         "Balance Sheet",
+    //         "Monthly Pay Sheet",
+    //         "Incorporation Certificate"
+    //     ],
+    //     image: "PF-Return-Filing.png",
+    // },
+    // {
+    //     name: "ESI Registration",
+    //     slug: "esi-registration",
+    //     type: "compliance",
+    //     position: "second-half",
+    //     documents: [
+    //         "Factories Act Registration Certificate",
+    //         "Shops and Establishment Act Registration Certificate",
+    //         "Company Registration Certificate",
+    //         "Partnership Deed",
+    //         "Goods and Services Tax (GST) Registration Certificate",
+    //         "Memorandum of Association (MoA)",
+    //         "Articles of Association (AoA)",
+    //         "Recent Utility Bill",
+    //         "Rental Agreement",
+    //         "Property Tax Receipt",
+    //         "Employee Details",
+    //         "PAN Cards",
+    //         "Employee Compensation Details",
+    //         "Banking Information",
+    //         "List of Directors",
+    //         "List of Shareholders",
+    //         "Employee Attendance Register"
+    //     ],
+    //     image: "ESI-Registration.png",
+    // },
     // Goods and Services Tax
     {
-        id: 23,
         name: "GST Registration",
         slug: "gst-registration",
         type: "goods-and-services-tax",
@@ -367,9 +363,9 @@ const services = [
             "Legal Ownership Document"
         ],
         image: "GST-Registration_LEDGERS.png",
+        isFeatured: true,
     },
     {
-        id: 24,
         name: "GST Return Filing",
         slug: "gst-return-filing",
         type: "goods-and-services-tax",
@@ -385,9 +381,9 @@ const services = [
             "Monthly: Pro and Premium plans: Normal Excel file of Sales & Purchase",
         ],
         image: "GST-Return-Filing-Accountant.jpg",
+        isFeatured: true,
     },
     {
-        id: 25,
         name: "GST LUT Filing",
         slug: "gst-lut-filing",
         type: "goods-and-services-tax",
@@ -406,7 +402,6 @@ const services = [
         image: "GST-LUT-Form-india.jpg",
     },
     {
-        id: 26,
         name: "GST Registration Cancellation",
         slug: "gst-registration-cancellation",
         type: "goods-and-services-tax",
@@ -421,7 +416,6 @@ const services = [
         image: "GST-Registration_cancellation.png",
     },
     {
-        id: 27,
         name: "GST Annual Return",
         slug: "gst-annual-return",
         type: "goods-and-services-tax",
@@ -430,7 +424,6 @@ const services = [
         image: "GST-Annual-Return-Filing-GSTR-9.jpg",
     },
     {
-        id: 28,
         name: "GST Invoicing",
         slug: "gst-invoicing",
         type: "goods-and-services-tax",
@@ -458,7 +451,6 @@ const services = [
         image: "GST-Invoicing.jpg",
     },
     {
-        id: 29,
         name: "GST eInvoicing",
         slug: "gst-einvoicing",
         type: "goods-and-services-tax",
@@ -476,7 +468,6 @@ const services = [
         image: "E-Invoice.png",
     },
     {
-        id: 30,
         name: "eWay Bill",
         slug: "eway-bill",
         type: "goods-and-services-tax",
@@ -488,7 +479,6 @@ const services = [
         image: "eWay-Bill.png",
     },
     {
-        id: 31,
         name: "Input Tax Credit",
         slug: "input-tax-credit",
         type: "goods-and-services-tax",
@@ -504,7 +494,6 @@ const services = [
     },
     // Income Tax
     {
-        id: 32,
         name: "Personal Tax Filing",
         slug: "personal-tax-filing",
         type: "income-tax",
@@ -523,7 +512,6 @@ const services = [
         image: "personal-tax-return-filing.png",
     },
     {
-        id: 33,
         name: "Business Tax Filing",
         slug: "business-tax-filing",
         type: "income-tax",
@@ -540,7 +528,6 @@ const services = [
         image: "business-tax-Filing-indiafilings.png",
     },
     {
-        id: 34,
         name: "Tax Notice",
         slug: "tax-notice",
         type: "income-tax",
@@ -554,7 +541,6 @@ const services = [
         image: "IT-NOTICE-RESPONSE.jpg",
     },
     {
-        id: 35,
         name: "TDS Filing",
         slug: "tds-filing",
         type: "income-tax",
@@ -569,7 +555,6 @@ const services = [
         image: "TFD-return-filing.png",
     },
     {
-        id: 36,
         name: "Form 16",
         slug: "form-16",
         type: "income-tax",
@@ -587,7 +572,6 @@ const services = [
         image: "form-16-india.png",
     },
     {
-        id: 37,
         name: "ITR-1 Return",
         slug: "itr-1-return",
         type: "income-tax",
@@ -606,9 +590,9 @@ const services = [
             "Salary Slips"
         ],
         image: "ITR-1-return-filing.png",
+        isFeatured: true,
     },
     {
-        id: 38,
         name: "ITR-2 Return",
         slug: "itr-2-return",
         type: "income-tax",
@@ -629,7 +613,6 @@ const services = [
         image: "ITR-2-return-filing.png",
     },
     {
-        id: 39,
         name: "ITR-3 Return",
         slug: "itr-3-return",
         type: "income-tax",
@@ -660,7 +643,6 @@ const services = [
         image: "ITR-3-return-filing.png",
     },
     {
-        id: 40,
         name: "ITR-4 Return",
         slug: "itr-4-return",
         type: "income-tax",
@@ -673,7 +655,6 @@ const services = [
         image: "ITR-4-return-filing.png",
     },
     {
-        id: 41,
         name: "ITR-5 Return",
         slug: "itr-5-return",
         type: "income-tax",
@@ -701,7 +682,6 @@ const services = [
         image: "ITR-5-return-filing.png",
     },
     {
-        id: 42,
         name: "ITR-6 Return",
         slug: "itr-6-return",
         type: "income-tax",
@@ -729,7 +709,6 @@ const services = [
         image: "ITR-6-return-filing.png",
     },
     {
-        id: 43,
         name: "ITR-7 Return",
         slug: "itr-7-return",
         type: "income-tax",
@@ -739,10 +718,128 @@ const services = [
             "Incorporation Certificate"
         ],
         image: "ITR-7-return-filing.png",
-    }
+    },
+    {
+        name: "Property Title Search",
+        slug: "property-title-search",
+        type: "property-legal",
+        position: "first-half",
+        documents: [],
+        image: "",
+        isFeatured: true,
+    },
+    {
+        name: "Property Valuation",
+        slug: "property-valuation",
+        type: "property-legal",
+        position: "first-half",
+        documents: [],
+        image: "",
+    },
+    {
+        name: "Newspaper Publication",
+        slug: "newspaper-publication",
+        type: "property-legal",
+        position: "first-half",
+        documents: [],
+        image: "",
+    },
+    {
+        name: "Property Registration",
+        slug: "property-registration",
+        type: "property-legal",
+        position: "first-half",
+        documents: [],
+        image: "",
+        isFeatured: true,
+    },
+    {
+        name: "Power of Attorney",
+        slug: "power-of-attorney",
+        type: "property-legal",
+        position: "first-half",
+        documents: [],
+        image: "",
+    },
+    {
+        name: "Property Mortgage",
+        slug: "property-mortgage",
+        type: "property-legal",
+        position: "second-half",
+        documents: [],
+        image: "",
+    },
+    {
+        name: "Namantaran",
+        slug: "namantaran",
+        type: "property-legal",
+        position: "second-half",
+        documents: [],
+        image: "",
+        isFeatured: true,
+    },
+    {
+        id:51,
+        name: "Property Tax",
+        slug: "property-tax",
+        type: "property-legal",
+        position: "second-half",
+        documents: [],
+        image: "",
+    },
+    {
+        name: "Rera Registration",
+        slug: "rera-registration",
+        type: "property-legal",
+        position: "second-half",
+        documents: [],
+        image: "",
+    },
+    {
+        name: "Property Legal Status",
+        slug: "property-legal-status",
+        type: "property-legal",
+        position: "second-half",
+        documents: [],
+        image: "",
+    },
+    {
+        name: "Deed Drafting",
+        slug: "deed-drafting",
+        type: "legal-drafting",
+        position: "first-half",
+        documents: [],
+        image: "",
+    },
+    {
+        name: "Legal Drafting",
+        slug: "legal-drafting",
+        type: "legal-drafting",
+        position: "first-half",
+        documents: [],
+        image: "",
+    },
+    {
+        name: "Rent Agreement",
+        slug: "rent-agreement",
+        type: "legal-drafting",
+        position: "first-half",
+        documents: [],
+        image: "",
+        isFeatured: true,
+    },
+    {
+        name: "Partnership Agreement",
+        slug: "partnership-agreement",
+        type: "legal-drafting",
+        position: "first-half",
+        documents: [],
+        image: "",
+    },
 ];
 
 export default services;
+
 export const documents = [
     "Identity and Address Proof of Partners",
     "PAN Cards of Partners",
@@ -753,33 +850,29 @@ export const documents = [
     "Rent Agreement or registry papers of the property from where the business will be operated",
     "Stamp Paper for Partnership Deed Notarization",
 ];
+
 export const achievements = [
     {
-        id: 0,
         icon: 'fa-solid fa-star',
         title: "10 Years",
         desc: "Of Experience",
     },
     {
-        id: 1,
         icon: 'fa-solid fa-gavel',
         title: "5000 +",
         desc: "Cases Solved",
     },
     {
-        id: 2,
         icon: 'fa-solid fa-award',
         title: "15 +",
         desc: "Awards Gained",
     },
     {
-        id: 3,
         icon: 'fa-solid fa-face-smile',
         title: "200 k +",
         desc: "Trusted Clients",
     },
     {
-        id: 4,
         icon: 'fa-solid fa-phone',
         title: "50 k+",
         desc: "Queries Solved",

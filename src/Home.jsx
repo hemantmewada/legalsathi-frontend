@@ -1,6 +1,7 @@
 import React from 'react';
 import Typed from 'typed.js';
 import Form from './components/Form';
+import services from './config/data';
 
 function Home() {
   const el = React.useRef(null);
@@ -47,77 +48,28 @@ function Home() {
         <div className="container">
           <div className="mb-5 text-center">
             <h2 className="section-heading">
-              <strong className="text-black">Practice</strong> Areas
+              <strong className="text-black">Featured</strong> Services
             </h2>
             <p className="mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
           </div>
           <div className="row">
-            <div className="col-lg-4 mb-5">
-              <div className="practicing">
-                <div className="practicing-inner">
-                  <div className="wrap-icon">
-                    <span className="flaticon-museum" />
+
+            {services.map((service) => {
+              return service.isFeatured && (
+                <div className="col-lg-4 mb-5">
+                  <div className="practicing">
+                    <div className="practicing-inner">
+                      <div className="wrap-icon">
+                        <span className="flaticon-museum" />
+                      </div>
+                      <h3>{service.name}</h3>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, laboriosam!</p>
+                    </div>
                   </div>
-                  <h3>Bankruptcy Law</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, laboriosam!</p>
                 </div>
-              </div>
-            </div>
-            <div className="col-lg-4 mb-5">
-              <div className="practicing">
-                <div className="practicing-inner">
-                  <div className="wrap-icon">
-                    <span className="flaticon-shield" />
-                  </div>
-                  <h3>Business Law</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, laboriosam!</p>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-4 mb-5">
-              <div className="practicing">
-                <div className="practicing-inner">
-                  <div className="wrap-icon">
-                    <span className="flaticon-help" />
-                  </div>
-                  <h3>Civil Rights Law</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, laboriosam!</p>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-4 mb-5">
-              <div className="practicing">
-                <div className="practicing-inner">
-                  <div className="wrap-icon">
-                    <span className="flaticon-revolver" />
-                  </div>
-                  <h3>Criminal Law</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, laboriosam!</p>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-4 mb-5">
-              <div className="practicing">
-                <div className="practicing-inner">
-                  <div className="wrap-icon">
-                    <span className="flaticon-luggage" />
-                  </div>
-                  <h3>Immigration Law</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, laboriosam!</p>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-4 mb-5">
-              <div className="practicing">
-                <div className="practicing-inner">
-                  <div className="wrap-icon">
-                    <span className="flaticon-house" />
-                  </div>
-                  <h3>Family Law</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, laboriosam!</p>
-                </div>
-              </div>
-            </div>
+              )
+            })}
+            
           </div>
         </div>
       </div>

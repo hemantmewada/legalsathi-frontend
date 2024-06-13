@@ -12,7 +12,6 @@ const Header = () => {
         const filteredServices = services.filter((service) => service.name.toLowerCase().includes(value.toLowerCase()));
         setSearchServices(filteredServices);
         if (value == "") {
-            console.log("fsdfsdf");
             setSearchServices([]);
             console.log(searchServices);
         }
@@ -55,6 +54,44 @@ const Header = () => {
                         >
 
                             <ul className="site-menu main-menu js-clone-nav ml-auto">
+
+                                <li className="has-children">
+                                    <Link to="#" className="nav-link text-white">Property Legal</Link>
+                                    <ul className="dropdown mega-menu">
+                                    <div className="row">
+                                        <div className="col-lg-6">
+                                            {services.map((service) => {
+                                                return service.position == "first-half" && service.type == "property-legal" && (
+                                                    <li key={service.id}><Link to={`/${service.slug}`}>{service.name}</Link></li>
+                                                )
+                                            })}
+                                        </div>
+                                        <div className="col-lg-6">
+                                            {services.map((service) => {
+                                                return service.position == "second-half" && service.type == "property-legal" && (
+                                                    <li key={service.id}><Link to={`/${service.slug}`}>{service.name}</Link></li>
+                                                )
+                                            })}
+                                        </div>
+                                    </div>
+                                    </ul>
+                                </li>
+
+                                <li className="has-children">
+                                    <Link to="#" className="nav-link text-white">Legal Drafting</Link>
+                                    <ul className="dropdown mega-menu">
+                                    <div className="row">
+                                        <div className="col-lg-12">
+                                            {services.map((service) => {
+                                                return service.position == "first-half" && service.type == "legal-drafting" && (
+                                                    <li key={service.id}><Link to={`/${service.slug}`}>{service.name}</Link></li>
+                                                )
+                                            })}
+                                        </div>
+                                    </div>
+                                    </ul>
+                                </li>
+
                                 <li className="has-children">
                                     <Link to="#" className="nav-link text-white">Legal issues</Link>
                                     <ul className="dropdown mega-menu">
@@ -76,6 +113,7 @@ const Header = () => {
                                     </div>
                                     </ul>
                                 </li>
+
                                 <li className="has-children">
                                     <Link to="#" className="nav-link text-white">Start A Business</Link>
                                     <ul className="dropdown mega-menu">
@@ -97,7 +135,8 @@ const Header = () => {
                                     </div>
                                     </ul>
                                 </li>
-                                <li className="has-children">
+
+                                {/* <li className="has-children">
                                     <Link to="#" className="nav-link text-white">Compliance</Link>
                                     <ul className="dropdown mega-menu">
                                     <div className="row">
@@ -117,7 +156,8 @@ const Header = () => {
                                         </div>
                                     </div>
                                     </ul>
-                                </li>
+                                </li> */}
+
                                 <li className="has-children">
                                     <Link to="#" className="nav-link text-white">Goods and Services Tax</Link>
                                     <ul className="dropdown mega-menu">
@@ -139,6 +179,7 @@ const Header = () => {
                                     </div>
                                     </ul>
                                 </li>
+
                                 <li className="has-children">
                                     <Link to="#" className="nav-link text-white">Income Tax</Link>
                                     <ul className="dropdown mega-menu">
@@ -160,6 +201,7 @@ const Header = () => {
                                     </div>
                                     </ul>
                                 </li>
+
                                 <li>
                                     <div className="search-box">
                                         <i onClick={() => setIsSearchBoxOpen(!isSearchBoxOpen)} className="fa-solid fa-magnifying-glass text-white cursor-pointer"></i>
@@ -177,6 +219,7 @@ const Header = () => {
                                         )}
                                     </div>
                                 </li>
+
                             </ul>
                         </nav>
                     </div>
